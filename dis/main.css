@@ -5,5 +5,29 @@
 
 body {
   font-family: "Work Sans", sans-serif;
-  padding: 0;
+  background-color: #eee;
+}
+body .container {
+  margin: auto;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    background-color: #8ae90d;
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    background-color: #0d0de9;
+    width: 950px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    background-color: #d2e335;
+    width: 1170px;
+  }
 }/*# sourceMappingURL=main.css.map */

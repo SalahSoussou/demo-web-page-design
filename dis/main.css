@@ -8,7 +8,6 @@ body {
   background-color: #eee;
 }
 body .container {
-  margin: auto;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -30,4 +29,25 @@ body .container {
     background-color: #d2e335;
     width: 1170px;
   }
+}
+.header {
+  padding: 20px;
+}
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .container .logo {
+  width: 30px;
+  height: 30px;
+}
+.header .container .links {
+  position: relative;
 }/*# sourceMappingURL=main.css.map */

@@ -38,5 +38,38 @@ body
         .logo
             width: 30px
             height: 30px
-        .links
+        #links
             position: relative
+            // &:hover
+            //     ul
+            //         display: block
+            ul
+                list-style: none
+                min-width: 200px
+                position: absolute
+                background-color: #f6f6f6
+                margin: 0px
+                padding: 0px
+                right: 0
+                transition: .3s
+                top: calc( 100% + 15px )
+                display: none
+                &::before
+                    content: ''
+                    border: 10px solid
+                    border-color: transparent transparent #f6f6f6 transparent
+                    position: absolute
+                    top: -20px
+                    right: 5px
+                li
+                    &:not(:last-child) a
+                        border-bottom: 1px solid #eee
+
+                a
+                    display: block
+                    padding: 15px
+                    text-decoration: none
+                    color: #333
+                    transition: .3s
+                    &:hover
+                        padding-left: 25px

@@ -6,6 +6,7 @@
 body {
   font-family: "Work Sans", sans-serif;
   background-color: #eee;
+  overflow: hidden;
 }
 body .container {
   padding: 0 15px;
@@ -58,11 +59,11 @@ body .container {
   background-color: #f6f6f6;
   margin: 0px;
   padding: 0px;
-  right: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  right: -500px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   top: calc(100% + 15px);
-  display: none;
+  z-index: 100;
 }
 .header .container #links ul::before {
   content: "";
@@ -70,7 +71,10 @@ body .container {
   border-color: transparent transparent #f6f6f6 transparent;
   position: absolute;
   top: -20px;
-  right: 5px;
+  right: 1px;
+}
+.header .container #links ul li {
+  background-color: #f6f6f6;
 }
 .header .container #links ul li:not(:last-child) a {
   border-bottom: 1px solid #eee;
@@ -85,4 +89,31 @@ body .container {
 }
 .header .container #links ul a:hover {
   padding-left: 25px;
+}
+
+.hero {
+  background-image: url(../images/hero-bg.jpg);
+  background-size: cover;
+  height: calc(100vh - 64px);
+  position: relative;
+}
+.hero .intro-text {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 350px;
+  max-width: 100%;
+}
+.hero .intro-text h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 2.7rem;
+  color: #10cab7;
+}
+.hero .intro-text p {
+  font-size: 1.2em;
+  line-height: 1.2;
 }/*# sourceMappingURL=main.css.map */

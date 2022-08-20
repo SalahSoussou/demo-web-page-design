@@ -15,20 +15,43 @@ body .container {
 
 @media (min-width: 768px) {
   .container {
-    background-color: #8ae90d;
     width: 750px;
   }
 }
 @media (min-width: 992px) {
   .container {
-    background-color: #0d0de9;
     width: 950px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    background-color: #d2e335;
     width: 1170px;
+  }
+}
+.component-header {
+  color: #d0d2d4;
+  font-size: 6rem;
+  font-weight: 800;
+  letter-spacing: -3px;
+  text-align: center;
+  margin: 0;
+}
+.component-header + p {
+  margin: -30px 0 0;
+  font-size: 1.15rem;
+  text-align: center;
+  color: #797979;
+}
+
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+  .component-header {
+    font-size: 4.2rem;
+  }
+  .component-header + p {
+    margin-top: -20px;
   }
 }
 .header {
@@ -89,6 +112,7 @@ body .container {
 }
 .header .container #links ul a:hover {
   padding-left: 25px;
+  color: #10cab7;
 }
 
 .hero {
@@ -115,5 +139,34 @@ body .container {
 }
 .hero .intro-text p {
   font-size: 1.2em;
-  line-height: 1.2;
+  line-height: 1.8;
+}
+
+.features {
+  padding: 60px 0;
+  background-color: #f6f6f6;
+}
+.features .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+.features .container .feat {
+  padding: 20px;
+  text-align: center;
+}
+.features .container .feat i {
+  color: #10cab7;
+}
+.features .container .feat h3 {
+  font-weight: 800;
+  margin: 30px 0;
+}
+.features .container .feat p {
+  line-height: 1.8;
+  color: #777;
+}
+
+.services {
+  padding: 60px 0;
 }/*# sourceMappingURL=main.css.map */

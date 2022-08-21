@@ -178,6 +178,7 @@ body
                 top: -50px
                 position: absolute
                 right: 0
+                border-radius: 0 20px 20px 0
                 z-index: -1
             img
                 width: 260px
@@ -188,8 +189,15 @@ body
             flex-direction: column
             text-align: center
 
-@media (max-width:767px)
-    .services
-        .srv
-            flex-direction: column
-            text-align: center
+@media (max-width:1199px)
+    .img-container
+        display: none
+// Portfolio section
+.portfolio
+    padding: 60px 0
+    background-color: #f6f6f6
+    .ortfolio-content
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(300px,1fr))
+        grid-gap: 30px
+        margin-top: 80px

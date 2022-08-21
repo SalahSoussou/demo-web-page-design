@@ -1,4 +1,5 @@
 $main-color: #10cab7
+$co-color: #2c4755
 *
     box-sizing: border-box
 
@@ -155,6 +156,40 @@ body
         .srv
             display: flex
             margin-bottom: 40px
-.img-container
-    img
-        width: 300px
+            i
+                color: $main-color
+                flex-basis: 60px
+            .text
+                flex: 1
+                h3
+                    margin: 0 0 20px
+                p
+                    color: #777
+                    font-weight: 300
+                    line-height: 1.6
+        .img-container
+            text-align: center
+            position: relative
+            &::before
+                content: ''
+                background-color: $co-color
+                width: 100px
+                height: calc(100% + 100px)
+                top: -50px
+                position: absolute
+                right: 0
+                z-index: -1
+            img
+                width: 260px
+
+@media (max-width:767px)
+    .services
+        .srv
+            flex-direction: column
+            text-align: center
+
+@media (max-width:767px)
+    .services
+        .srv
+            flex-direction: column
+            text-align: center

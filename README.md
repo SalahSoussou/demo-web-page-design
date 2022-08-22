@@ -1,2 +1,3 @@
 # demo-web-page-design
-Sass &amp; Html web page
+statique web site bulleted using HTML5 ,SASS and 
+little bit of JavaScript 

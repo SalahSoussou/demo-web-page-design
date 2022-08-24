@@ -309,7 +309,7 @@ body .container {
   top: -40px;
 }
 .about .container .about-content .image img {
-  max-width: 100%;
+  width: 100%;
 }
 .about .container .about-content .text {
   -ms-flex-preferred-size: calc(100% - 500px);
@@ -340,6 +340,9 @@ body .container {
   }
   .about-content .image {
     margin: 0 auto 60px;
+  }
+  .about-content .image::before, .about-content .image::after {
+    display: none;
   }
 }
 .contact {
